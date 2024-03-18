@@ -16,6 +16,7 @@ public class Library {
         for (int i = 0; i < result.size(); i++) {
             result.set(i, "Via plataforma: " + result.get(i));
         }
+        result.add(greet6(name));
         return result;
     }
 

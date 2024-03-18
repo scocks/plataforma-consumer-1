@@ -21,13 +21,14 @@ class MainTest {
     void testGreetAll() {
         Library library = new Library();
         ArrayList<String> result = library.greetAll("plataforma-consumer-1");
-        assertEquals(6,result.size());
+        assertEquals(7,result.size());
         assertEquals("Via plataforma: Hello from plataforma, plataforma-consumer-1!", result.get(0));
         assertEquals("Via plataforma: Hello, plataforma!", result.get(1));
         assertEquals("Via plataforma: Greetings, plataforma!", result.get(2));
         assertEquals("Via plataforma: Salutations, plataforma!", result.get(3));
         assertEquals("Via plataforma: Hej, plataforma!", result.get(4));
         assertEquals("Via plataforma: Kon'nichiwa, plataforma!", result.get(5));
+        assertEquals("Bonjour, plataforma-consumer-1!", result.get(6));
     }
     @Test
     void testGreet() {
