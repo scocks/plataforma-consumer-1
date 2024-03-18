@@ -17,6 +17,7 @@ public class Library {
             result.set(i, "Via plataforma: " + result.get(i));
         }
         result.add(greet6(name));
+        result.add(greet(name));
         return result;
     }
 
@@ -25,7 +26,7 @@ public class Library {
         return plataforma.greet(name);
     }
     public String greet(String name) {
-        return "Hello from plataforma-consumer-1, " + name + "!";
+        return "Bonjour from plataforma-consumer-1, " + name + "!";
     }
     public String greet1(String name) {
         org.king.plataforma.Library plataforma = new org.king.plataforma.Library();
@@ -48,6 +49,6 @@ public class Library {
         return "Via plataforma: " + plataforma.greet5(name);    
     }
     public String greet6(String name) {
-        return "Bonjour, " + name + "!";
+        return "Ciao, " + name + "!";
     }    
 }
