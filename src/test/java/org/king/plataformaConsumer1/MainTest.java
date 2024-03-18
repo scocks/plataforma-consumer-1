@@ -62,4 +62,9 @@ class MainTest {
         String result = library.greet5("plataforma-consumer-1");
         assertEquals("Via plataforma: Kon'nichiwa, plataforma-consumer-1!", result);
     }
+    void testGreet6() {
+        Library library = new Library();
+        String result = library.greet5("plataforma-consumer-1");
+        assertEquals("Bonjour, plataforma-consumer-1!", result);
+    }
 }
