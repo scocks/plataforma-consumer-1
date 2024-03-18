@@ -64,7 +64,7 @@ class MainTest {
     }
     void testGreet6() {
         Library library = new Library();
-        String result = library.greet5("plataforma-consumer-1");
+        String result = library.greet6("plataforma-consumer-1");
         assertEquals("Bonjour, plataforma-consumer-1!", result);
     }
 }
