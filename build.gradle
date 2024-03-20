@@ -19,8 +19,12 @@ repositories {
 }
 
 dependencies {
-    implementation platform('org.king.plataforma-ecosystem-bom:plataforma-ecosystem-bom:1.0.0-SNAPSHOT')
+    implementation platform('org.king.plataforma-ecosystem-bom:plataforma-ecosystem-bom:1.0.0-SNAPSHOT')    
     implementation 'org.king.plataforma:plataforma'
+    implementation 'org.king.plataformaConsumer1:plataformaConsumer1'
+    implementation 'org.king.plataformaConsumer2:plataformaConsumer2'
+    implementation 'org.king.plataformaConsumer3:plataformaConsumer3'
+    implementation 'org.king.plataformaConsumer4:plataformaConsumer4'
     implementation 'org.king.libDep1:lib-dep-1'
     implementation 'org.king.libDep2:lib-dep-2'
     implementation 'org.king.libDep3:lib-dep-3'
@@ -71,4 +75,5 @@ publishing {
     }
 }
 
+compileTestJava.dependsOn jar
 publishMavenPublicationToNexusRepository.dependsOn jar
