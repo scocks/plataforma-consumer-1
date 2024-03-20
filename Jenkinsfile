@@ -15,7 +15,7 @@ pipeline {
             """
         }
     }
-    stages {
+    stages {       
         stage('Generate Properties') {
             steps {
                 container('jdk17') {                    
